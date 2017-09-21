@@ -83,12 +83,6 @@
     <Compile Include="SyncTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="VistaButton.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="VistaButton.designer.cs">
-      <DependentUpon>VistaButton.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,9 +98,6 @@
     </Compile>
     <EmbeddedResource Include="settingsForm.resx">
       <DependentUpon>settingsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VistaButton.resx">
-      <DependentUpon>VistaButton.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

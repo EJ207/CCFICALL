@@ -29,28 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settingsForm));
-            this.button1 = new VistaButton.VistaButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPhoneIP = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtExt = new System.Windows.Forms.TextBox();
-            this.btnStoreInfo = new VistaButton.VistaButton();
             this.syncTextBox1 = new CCFICall.SyncTextBox();
             this.syncTextBox2 = new CCFICall.SyncTextBox();
+            this.btnStoreInfo = new System.Windows.Forms.Button();
+            this.btnSavePhoneSettings = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(24, 85);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 28);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Save Phone Settings";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -91,20 +78,6 @@
             this.txtExt.Size = new System.Drawing.Size(120, 22);
             this.txtExt.TabIndex = 15;
             this.txtExt.Text = global::CCFICall.Properties.Settings.Default.extn;
-            this.txtExt.TextChanged += new System.EventHandler(this.txtExt_TextChanged);
-            // 
-            // btnStoreInfo
-            // 
-            this.btnStoreInfo.BackColor = System.Drawing.Color.Transparent;
-            this.btnStoreInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnStoreInfo.ForeColor = System.Drawing.Color.White;
-            this.btnStoreInfo.Location = new System.Drawing.Point(24, 287);
-            this.btnStoreInfo.Margin = new System.Windows.Forms.Padding(4);
-            this.btnStoreInfo.Name = "btnStoreInfo";
-            this.btnStoreInfo.Size = new System.Drawing.Size(176, 28);
-            this.btnStoreInfo.TabIndex = 20;
-            this.btnStoreInfo.Text = "Save Store Info";
-            this.btnStoreInfo.Click += new System.EventHandler(this.btnStoreInfo_Click);
             // 
             // syncTextBox1
             // 
@@ -128,15 +101,34 @@
             this.syncTextBox2.TabIndex = 24;
             this.syncTextBox2.Text = resources.GetString("syncTextBox2.Text");
             // 
+            // btnStoreInfo
+            // 
+            this.btnStoreInfo.Location = new System.Drawing.Point(24, 293);
+            this.btnStoreInfo.Name = "btnStoreInfo";
+            this.btnStoreInfo.Size = new System.Drawing.Size(176, 23);
+            this.btnStoreInfo.TabIndex = 25;
+            this.btnStoreInfo.Text = "Save Store Info";
+            this.btnStoreInfo.UseVisualStyleBackColor = true;
+            // 
+            // btnSavePhoneSettings
+            // 
+            this.btnSavePhoneSettings.Location = new System.Drawing.Point(24, 83);
+            this.btnSavePhoneSettings.Name = "btnSavePhoneSettings";
+            this.btnSavePhoneSettings.Size = new System.Drawing.Size(176, 23);
+            this.btnSavePhoneSettings.TabIndex = 26;
+            this.btnSavePhoneSettings.Text = "Save Phone Settings";
+            this.btnSavePhoneSettings.UseVisualStyleBackColor = true;
+            this.btnSavePhoneSettings.Click += new System.EventHandler(this.btnSavePhoneSettings_Click);
+            // 
             // settingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(218, 328);
+            this.Controls.Add(this.btnSavePhoneSettings);
+            this.Controls.Add(this.btnStoreInfo);
             this.Controls.Add(this.syncTextBox2);
             this.Controls.Add(this.syncTextBox1);
-            this.Controls.Add(this.btnStoreInfo);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPhoneIP);
             this.Controls.Add(this.label2);
@@ -147,21 +139,19 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "settingsForm";
             this.Text = "Settings";
-            this.Load += new System.EventHandler(this.settingsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private VistaButton.VistaButton button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPhoneIP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtExt;
-        private VistaButton.VistaButton btnStoreInfo;
         private SyncTextBox syncTextBox1;
         private SyncTextBox syncTextBox2;
+        private System.Windows.Forms.Button btnStoreInfo;
+        private System.Windows.Forms.Button btnSavePhoneSettings;
     }
 }

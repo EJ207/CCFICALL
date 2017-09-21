@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CCFICall
@@ -13,18 +6,26 @@ namespace CCFICall
     public partial class settingsForm : Form
     {
         private mainForm frmMain_;
+
+        /** 
+         * <summary> SettingsForm Intialized within mainForm.cs scope</summary>
+         * <remarks>
+         *   This is to allow accessing mainForm.cs public scope, so setting the statusStrip text is possible.
+         * </remarks>
+         */
         public settingsForm(mainForm frmMain)
         {
             InitializeComponent();
             frmMain_ = frmMain;
+            //Phone settings are loaded from Application Settings and set utilizing ApplicationSetting Property Binding on txtPhoneIP and txtExt textboxes
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            SaveSettings();
-            frmMain_.SetStatus("Phone Settings Saved!");
-            this.Close();
-        }
+        /** 
+         * <summary> Save Desk Phone settings</summary>
+         * <remarks>
+         *    These settings are stored in %USERPROFILE%/AppData/Local/CCFI/CCFICall.exe_Url_XXXXXX/App_Version/user.config
+         * </remarks>
+         */
         private void SaveSettings()
         {
             Properties.Settings.Default.ipaddress = txtPhoneIP.Text;
@@ -32,19 +33,11 @@ namespace CCFICall
             Properties.Settings.Default.Save();
         }
 
-        private void settingsForm_Load(object sender, EventArgs e)
+        private void btnSavePhoneSettings_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtExt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnStoreInfo_Click(object sender, EventArgs e)
-        {
-
+            SaveSettings();
+            frmMain_.SetStatus("Phone Settings Saved!");
+            this.Close();
         }
     }
 }

@@ -82,7 +82,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stsLbl});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 235);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 210);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.statusStrip1.Size = new System.Drawing.Size(427, 22);
@@ -142,7 +142,7 @@
             // 
             // btnTest
             // 
-            this.btnTest.Location = new System.Drawing.Point(155, 218);
+            this.btnTest.Location = new System.Drawing.Point(153, 234);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(104, 23);
             this.btnTest.TabIndex = 19;
@@ -152,7 +152,7 @@
             // 
             // txtTestAction
             // 
-            this.txtTestAction.Location = new System.Drawing.Point(17, 218);
+            this.txtTestAction.Location = new System.Drawing.Point(15, 234);
             this.txtTestAction.Name = "txtTestAction";
             this.txtTestAction.Size = new System.Drawing.Size(132, 22);
             this.txtTestAction.TabIndex = 20;
@@ -1422,7 +1422,7 @@
             // btnConf
             // 
             this.btnConf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnConf.Location = new System.Drawing.Point(331, 18);
+            this.btnConf.Location = new System.Drawing.Point(337, 18);
             this.btnConf.Margin = new System.Windows.Forms.Padding(4);
             this.btnConf.Name = "btnConf";
             this.btnConf.Size = new System.Drawing.Size(58, 28);
@@ -1461,9 +1461,9 @@
             // 
             // btnVolDn
             // 
-            this.btnVolDn.Location = new System.Drawing.Point(266, 52);
+            this.btnVolDn.Location = new System.Drawing.Point(268, 53);
             this.btnVolDn.Name = "btnVolDn";
-            this.btnVolDn.Size = new System.Drawing.Size(57, 26);
+            this.btnVolDn.Size = new System.Drawing.Size(58, 26);
             this.btnVolDn.TabIndex = 31;
             this.btnVolDn.Text = "Vol -";
             this.btnVolDn.UseVisualStyleBackColor = true;
@@ -1471,7 +1471,7 @@
             // 
             // btnVolUp
             // 
-            this.btnVolUp.Location = new System.Drawing.Point(332, 53);
+            this.btnVolUp.Location = new System.Drawing.Point(338, 53);
             this.btnVolUp.Name = "btnVolUp";
             this.btnVolUp.Size = new System.Drawing.Size(57, 26);
             this.btnVolUp.TabIndex = 30;
@@ -1538,7 +1538,7 @@
             this.AcceptButton = this.btnCall;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 257);
+            this.ClientSize = new System.Drawing.Size(427, 232);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
